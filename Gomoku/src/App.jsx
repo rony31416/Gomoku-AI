@@ -1,14 +1,14 @@
-import { useState } from 'react'
+// App.jsx
+import React from 'react';
+import Gomoku from './components/Gomoku';
 
-function App() {
-  
 
+const App = () => {
   return (
-    <>
-    <h1>Let make Gomoku!</h1>
-    </>
+    <div>
+      <Gomoku />
+    </div>
+  );
+};
 
-  )
-}
-
-export default App
+export default App;
