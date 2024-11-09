@@ -1,14 +1,17 @@
-// App.jsx
-import React from 'react';
-import Gomoku from './components/Gomoku';
+import './App.css';
+import Homepage from './Pages/HomePage';
+import ViewBoard from './Board/Board'
+import { Routes, Route} from "react-router-dom";
 
-
-const App = () => {
+function App() {
   return (
-    <div>
-      <Gomoku />
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/board" element={<ViewBoard />} />
+      </Routes>
     </div>
   );
-};
+}
 
 export default App;
