@@ -1,4 +1,4 @@
-import {findLines} from "./BoardLines.js"
+import {findLines} from "./BoardLines"
 
 export function boardEval(board,maxPlayer){
 
@@ -73,7 +73,6 @@ export function boardEval(board,maxPlayer){
         ]
     }
     let redscore = 0, blackscore = 0;
-    // let fiveinrow = 0, livefour = 0, livethree = 0, deadfour = 0, deadthree = 0, deadtwo = 0;
 
     for(let i = 0 ; i < redfavor.fiveinrow.length ; i++){
         if(findLines(board,redfavor.fiveinrow[i]) > 0) return 10000000;
@@ -112,8 +111,6 @@ export function boardEval(board,maxPlayer){
             if(!maxPlayer) return -2000;
             else blackscore += findLines(board,blackfavor.deadthree[i])*4000;
         }
-        // if(findLines(board,redfavor.deadthree[i]) > 0) redscore += findLines(board,redfavor.deadthree[i])*300;
-        // if(findLines(board,blackfavor.deadthree[i]) > 0) blackscore += findLines(board,blackfavor.deadthree[i])*300;
     }
     for(let i = 0 ; i < redfavor.livetwo.length ; i++){
         if(findLines(board,redfavor.livetwo[i]) > 0) redscore += findLines(board,redfavor.livetwo[i])*200;

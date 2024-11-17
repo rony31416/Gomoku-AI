@@ -1,0 +1,109 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+table td {
+
+	background-color: #9cbed4;
+	border: 5px solid rgb(110, 83, 83);
+	width: 50px;
+	height: 50px;
+}
+
+.c0 {
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: -2px;
+	border-radius: 100%;
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: black;
+	background-color: black;
+	height: 25px;
+	width: 25px;
+}
+
+
+.c1 {
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: -2px;
+	border-radius: 100%;
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: black;
+	background-color: red;
+	height: 25px;
+	width: 25px;
+}
+
+.red {
+	color: red;
+}
+
+
+.btndd {
+	background: #14C3C9;
+	background-image: -webkit-linear-gradient(top, #14C3C9, #2980b9);
+	background-image: -moz-linear-gradient(top, #14C3C9, #2980b9);
+	background-image: -ms-linear-gradient(top, #14C3C9, #2980b9);
+	background-image: -o-linear-gradient(top, #14C3C9, #2980b9);
+	background-image: linear-gradient(to bottom, #14C3C9, #2980b9);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Georgia;
+	color: #FFFFFF;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	margin-top: 15px;
+}
+
+.btndd:hover {
+	background: #3cb0fd;
+	background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+	text-decoration: none;
+}
+
+
+
+
+.boardBG {
+	height: 100vh;
+	background-image: -webkit-linear-gradient(top, #8dabaf, #558fb6);
+	background-image: -moz-linear-gradient(top, #65ade7, #3f8cbe);
+	background-image: -ms-linear-gradient(top, #8dabaf, #558fb6);
+	background-image: -o-linear-gradient(top, #8dabaf, #558fb6);
+	background-image: linear-gradient(to bottom, #363535, #1f699b);
+}
+
+.new-click {
+	border: 2px solid yellow;
+	/* Highlight the clicked cell with a yellow border */
+	animation: flash 0.5s ease-in-out;
+	/* Optional: Add a flash effect */
+}
+
+@keyframes flash {
+	0% {
+		background-color: rgba(255, 255, 0, 0.2);
+	}
+
+	50% {
+		background-color: rgba(255, 255, 0, 0.4);
+	}
+
+	100% {
+		background-color: rgba(255, 255, 0, 0.2);
+	}
+}

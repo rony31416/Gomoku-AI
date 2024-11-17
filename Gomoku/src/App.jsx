@@ -1,6 +1,6 @@
 import './App.css';
 import Homepage from './Pages/HomePage';
-import ViewBoard from './Board/Board'
+import ViewBoard from './Pages/ViewBoard'
 import { Routes, Route} from "react-router-dom";
 
 function App() {
